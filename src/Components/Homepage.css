@@ -1,0 +1,162 @@
+.homepage {
+  width: 96%;
+  min-height: 100vh;
+  /* background-size: cover;
+  background-position: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: sans-serif;
+  position: relative;
+  background-image: url("public/images/Pawprint.jpg");
+}
+
+.brand {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #5c3b09;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 80px;
+}
+
+.homepage-left {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.welcome {
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #3d2a08;
+}
+
+.subtitle {
+  margin: 10px 0 25px;
+  font-size: 16px;
+  color: #4a3a20;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-field {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #c2a675;
+  outline: none;
+}
+
+.role-select {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  color: #3d2a08;
+}
+
+.submit-btn {
+  background-color: #8b5e34;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #6f4726;
+}
+
+.homepage-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dog-image {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .homepage-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .homepage-left {
+    padding-right: 0;
+  }
+
+  .role-select {
+    justify-content: center;
+  }
+
+  .dog-image {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand {
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+  }
+
+  .homepage-container {
+    padding: 20px;
+  }
+
+  .welcome {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .dog-image {
+    max-width: 100%;
+  }
+}

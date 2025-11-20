@@ -1,0 +1,199 @@
+.pet-adoption {
+  background-color: #FFE3B3;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* HEADER */
+.header {
+  padding: 2rem;
+  margin-top: 150px;
+}
+.header h1 {
+  color: #7F4C51;
+  font-size: 2.5rem;
+}
+.header p {
+  margin: 0.5rem 0 1.5rem;
+}
+.cta-btn {
+  background-color: #7F4C51;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: #63353b;
+}
+
+/* NAV */
+.nav-buttons {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.nav-buttons a {
+  background: #fff;
+  color: #7F4C51;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.nav-buttons a:hover {
+  background: #7F4C51;
+  color: #fff;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
+}
+.filters select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 140px;
+}
+
+/* PET CARDS */
+.pet-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.pet-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pet-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.pet-card h3 {
+  color: #7F4C51;
+  margin: 0.5rem 0;
+}
+.pet-card button {
+  background-color: #7F4C51;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.pet-card button:hover {
+  background-color: #63353b;
+}
+
+
+.stories, .events, .contact {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.stories h2, .events h2, .contact h2 {
+  color: #7F4C51;
+  margin-bottom: 1rem;
+}
+.contact .socials {
+  margin-top: 1rem;
+}
+.contact .socials a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #7F4C51;
+  text-decoration: none;
+}
+.contact .socials a:hover {
+  color: #63353b;
+}
+
+
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  .pet-cards {
+    gap: 1.5rem;
+  }
+  .pet-card {
+    width: 200px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 80px;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header p {
+    font-size: 0.95rem;
+  }
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pet-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-top: 50px;
+    padding: 1rem;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .nav-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  .filters select {
+    width: 100%;
+  }
+  .stories, .events, .contact {
+    width: 95%;
+    padding: 1.2rem;
+  }
+}

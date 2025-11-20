@@ -1,0 +1,98 @@
+.feed-cont{
+  padding-top: 30px;
+  background-color: rgb(247, 241, 232);
+  padding-bottom: 50px;
+  
+}
+.feedback{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 90vh;
+  margin-top: 120px;
+}
+.feed-p{
+  text-align: left;
+}
+.feedback-header{
+  text-align: center;
+  padding: 0px 20px;
+  margin-bottom: 55px;
+  
+}
+.feedback-header p{
+  color: grey;
+}
+.feedback-header h1{
+  margin-bottom: 30px;
+}
+.input input,  .feedback-btn{
+  width: 300px;
+  border: none;
+}
+
+.input textarea, .feedback-btn{
+  border-radius: 10px;
+  border: none;}
+.input textarea{
+  width: 280px;
+  padding: 10px;
+}
+.input{
+  margin-bottom: 30px;
+}
+.feedback-btn{
+  height: 40px;
+  background-color: #7F4C51;
+  color: white;
+  cursor: pointer;
+  
+}
+
+@media (min-width:570px) {
+  .input input, .feedback-btn{
+    width: 500px;
+  }
+  .input textarea{
+    width: 480px;
+  }
+  .feed-p{
+    text-align: left !important;
+  }
+
+}
+
+@media (min-width:790px) {
+  .input input, .feedback-btn{
+    width: 650px;
+  }
+  .input textarea{
+    width: 630px;
+    font-size: 17px;
+    height: 80px;
+  }
+  .input input{
+    height: 30px;
+  }
+  .feed-p{
+    text-align: left !important;
+  }
+  .feedback-header h1{
+    font-size: 39px;
+  }
+  .feedback-header p{
+    font-size: 20px;
+  }
+  .feedback-btn{
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width:1024px) {
+  .feedback-header h1{
+    font-size: 45px;
+  }
+}

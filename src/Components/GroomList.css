@@ -1,0 +1,44 @@
+.groom-sect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.groomList{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+ 
+}
+  .groom-head{
+  text-align: center;
+  }
+.groom-cont{
+   margin: 25px;
+}
+
+.groom-cont h1{
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.groom-cont p{
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: grey;
+}
+
+@media (min-width:500px) {
+  .groomList{
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:1120px) {
+
+}
